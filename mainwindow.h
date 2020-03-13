@@ -20,8 +20,9 @@ private slots:
     void FileExit();
     void FileConvert();
 private:
-    FormGraph * graph;
+
     Ui::MainWindow *ui;
+    FormGraph * graph;
 };
 
 #endif // MAINWINDOW_H

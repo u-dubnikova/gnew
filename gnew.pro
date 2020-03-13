@@ -26,11 +26,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    formgraph.cpp
+    formgraph.cpp \
+    alcdata.cpp \
+    convert.cpp
 
 HEADERS += \
         mainwindow.h \
-    formgraph.h
+    formgraph.h \
+    alcdata.h \
+    convert.h
 
 FORMS += \
         mainwindow.ui \
