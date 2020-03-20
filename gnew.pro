@@ -16,6 +16,7 @@ TEMPLATE = app
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
+win32: DEFINES+=_USE_MATH_DEFINES
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -40,4 +41,10 @@ FORMS += \
         mainwindow.ui \
     formgraph.ui
 
-unix|win32: LIBS += -lqwt-qt5
+unix: LIBS += -lqwt-qt5
+
+win32:CONFIG(release, debug|release): LIBS += -Lc:\Qwt-6.1.4\lib -lqwt
+else:win32:CONFIG(debug, debug|release): LIBS += -Lc:\Qwt-6.1.4\lib\ -lqwtd
+
+win32: INCLUDEPATH += c:\Qwt-6.1.4\include
+win32: DEPENDPATH += c:\Qwt-6.1.4\include

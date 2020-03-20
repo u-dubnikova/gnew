@@ -1,8 +1,8 @@
 #include "formgraph.h"
 #include "ui_formgraph.h"
 #include <cmath>
-#include <qwt/qwt_plot_curve.h>
-#include <qwt/qwt_plot_grid.h>
+#include <qwt_plot_curve.h>
+#include <qwt_plot_grid.h>
 
 FormGraph::FormGraph(QWidget *parent) :
     QWidget(parent),
