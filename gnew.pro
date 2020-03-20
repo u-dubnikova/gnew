@@ -47,4 +47,5 @@ win32:CONFIG(release, debug|release): LIBS += -Lc:\Qwt-6.1.4\lib -lqwt
 else:win32:CONFIG(debug, debug|release): LIBS += -Lc:\Qwt-6.1.4\lib\ -lqwtd
 
 win32: INCLUDEPATH += c:\Qwt-6.1.4\include
+unix: INCLUDEPATH += /usr/include/qt5/qwt
 win32: DEPENDPATH += c:\Qwt-6.1.4\include
